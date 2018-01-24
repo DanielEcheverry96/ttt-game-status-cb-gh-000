@@ -34,6 +34,7 @@ def won?(board)
       WIN_COMBINATIONS[6]
     elsif (position[2] == "X" && position[4] == "X" && position[6] == "X") || (position[2] == "O" && position[4] == "O" && position[6] == "O")
       WIN_COMBINATIONS[7]
+      else
     end
   end
 end
