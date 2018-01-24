@@ -17,13 +17,13 @@ WIN_COMBINATIONS = [
 ]
 
 def won?(board)
-  status= false
+  #status= false
   WIN_COMBINATIONS.each do |win_array|
     if board[win_array[0]] == "X" && board[win_array[1]] == "X" && board[win_array[2]] == "X" || board[win_array[0]] == "O" && board[win_array[1]] == "O" && board[win_array[2]] == "O"
       return win_array
     end
   end
-  status
+  #status
 end
 
 #if (board[0] == "X" && board[1] == "X" && board[2] == "X") || (board[0] == "O" && board[1] == "O" && board[2] == "O")
