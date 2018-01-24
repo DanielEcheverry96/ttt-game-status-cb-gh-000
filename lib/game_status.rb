@@ -23,7 +23,7 @@ def won?(board)
     elsif (position[3] == "X" && position[4] == "X" && position[5] == "X") || (position[3] == "O" && position[4] == "O" && position[5] == "O")
         WIN_COMBINATIONS[1]
       elsif (position[3] == "X" && position[4] == "X" && position[5] == "X") || (position[3] == "O" && position[4] == "O" && position[5] == "O")
-          WIN_COMBINATIONS[1]    
+          WIN_COMBINATIONS[1]
     end
   end
 end
