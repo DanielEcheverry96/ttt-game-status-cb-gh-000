@@ -22,8 +22,8 @@ def won?(board)
       WIN_COMBINATIONS[0]
     elsif (position[3] == "X" && position[4] == "X" && position[5] == "X") || (position[3] == "O" && position[4] == "O" && position[5] == "O")
         WIN_COMBINATIONS[1]
-      elsif (position[3] == "X" && position[4] == "X" && position[5] == "X") || (position[3] == "O" && position[4] == "O" && position[5] == "O")
-          WIN_COMBINATIONS[1]
+    elsif (position[6] == "X" && position[7] == "X" && position[8] == "X") || (position[6] == "O" && position[7] == "O" && position[8] == "O")
+          WIN_COMBINATIONS[2]
     end
   end
 end
