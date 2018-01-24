@@ -17,23 +17,21 @@ WIN_COMBINATIONS = [
 ]
 
 def won?(board)
-  board.each do |position|
-    if (position[0] == "X" && position[1] == "X" && position[2] == "X") || (position[0] == "O" && position[1] == "O" && position[2] == "O")
+    if (board[0] == "X" && board[1] == "X" && board[2] == "X") || (board[0] == "O" && board[1] == "O" && board[2] == "O")
       WIN_COMBINATIONS[0]
-    elsif (position[3] == "X" && position[4] == "X" && position[5] == "X") || (position[3] == "O" && position[4] == "O" && position[5] == "O")
+    elsif (board[3] == "X" && board[4] == "X" && board[5] == "X") || (board[3] == "O" && board[4] == "O" && board[5] == "O")
       WIN_COMBINATIONS[1]
-    elsif (position[6] == "X" && position[7] == "X" && position[8] == "X") || (position[6] == "O" && position[7] == "O" && position[8] == "O")
+    elsif (board[6] == "X" && board[7] == "X" && board[8] == "X") || (board[6] == "O" && board[7] == "O" && board[8] == "O")
       WIN_COMBINATIONS[2]
-    elsif (position[0] == "X" && position[3] == "X" && position[6] == "X") || (position[0] == "O" && position[3] == "O" && position[6] == "O")
+    elsif (board[0] == "X" && board[3] == "X" && board[6] == "X") || (board[0] == "O" && board[3] == "O" && board[6] == "O")
       WIN_COMBINATIONS[3]
-    elsif (position[1] == "X" && position[4] == "X" && position[7] == "X") || (position[1] == "O" && position[4] == "O" && position[7] == "O")
+    elsif (board[1] == "X" && board[4] == "X" && board[7] == "X") || (board[1] == "O" && board[4] == "O" && board[7] == "O")
       WIN_COMBINATIONS[4]
-    elsif (position[2] == "X" && position[5] == "X" && position[8] == "X") || (position[2] == "O" && position[5] == "O" && position[8] == "O")
+    elsif (board[2] == "X" && board[5] == "X" && board[8] == "X") || (board[2] == "O" && board[5] == "O" && board[8] == "O")
       WIN_COMBINATIONS[5]
-    elsif (position[0] == "X" && position[4] == "X" && position[8] == "X") || (position[0] == "O" && position[4] == "O" && position[8] == "O")
+    elsif (board[0] == "X" && board[4] == "X" && board[8] == "X") || (board[0] == "O" && board[4] == "O" && board[8] == "O")
       WIN_COMBINATIONS[6]
-    elsif (position[2] == "X" && position[4] == "X" && position[6] == "X") || (position[2] == "O" && position[4] == "O" && position[6] == "O")
+    elsif (board[2] == "X" && board[4] == "X" && board[6] == "X") || (board[2] == "O" && board[4] == "O" && board[6] == "O")
       WIN_COMBINATIONS[7]
     end
-  end
 end
