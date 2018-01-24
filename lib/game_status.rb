@@ -25,3 +25,7 @@ def won?(board)
   end
   status
 end
+
+def full?
+  
+end
